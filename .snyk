@@ -1,0 +1,18 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:mime:20170907':
+    - bitcoin-node-api > express > send > mime:
+        patched: '2022-10-08T20:11:49.727Z'
+    - bitcoin-node-api > express > connect > send > mime:
+        patched: '2022-10-08T20:11:49.727Z'
+  'npm:qs:20140806-1':
+    - bitcoin-node-api > express > connect > qs:
+        patched: '2022-10-08T20:11:49.727Z'
+  'npm:uglify-js:20151024':
+    - jade > constantinople > uglify-js:
+        patched: '2022-10-08T20:11:49.727Z'
+    - jade > transformers > uglify-js:
+        patched: '2022-10-08T20:11:49.727Z'
